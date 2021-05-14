@@ -7,27 +7,27 @@ import CasualProfile from '../images/CasualProfile.jpg';
 
 
 class PostsListPage extends React.Component {
-  state = {
-    posts: [],
-    loading: true,
-  }
+  // state = {
+  //   posts: [],
+  //   loading: true,
+  // }
 
-  componentDidMount() {
-    fetch("/api/posts")
-      .then(res => res.json())
-      .then(posts => {
-        this.setState({
-          loading: false,
-          posts: posts.map((p,ii) => <Post {...p} key={ii} />),
-        });
-      })
-      .catch(err => console.log("API ERROR: ", err));
-  }
+  // componentDidMount() {
+  //   fetch("/api/posts")
+  //     .then(res => res.json())
+  //     .then(posts => {
+  //       this.setState({
+  //         loading: false,
+  //         posts: posts.map((p,ii) => <Post {...p} key={ii} />),
+  //       });
+  //     })
+  //     .catch(err => console.log("API ERROR: ", err));
+  // }
 
   render() {
-    if(this.state.loading) {
-      return <Loading />;
-    }
+    // if(this.state.loading) {
+    //   return <Loading />;
+    // }
 
     return (
       <div className="container-fluid justify-content-right">
