@@ -1,0 +1,165 @@
+/* ensures padding and border are included in total width and height of elements */
+* {
+  box-sizing: border-box;
+}
+
+.bg-img{
+    background-image: url(./images/CeasarsBay.png);
+    background-size: cover;
+    margin-top: -5%; 
+    padding-top: 5%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.name{
+    font-family: 'Allura', cursive;
+    font-size: 30px;
+}
+
+.profile-card {
+  width: 70%;
+  padding-top: 8%;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  opacity: 0.8;
+}
+
+/* position of the profile image within the profile-img-container
+   will keep image in the middle of page as the screen size adjusts */
+.profile-image {
+  margin-top: -10%;
+  max-width: 250px;
+  max-height: 250px;
+  display: inline;
+  position: absolute;
+  z-index: 1;
+  /* opacity: 0; */
+}
+/*Container for profile image and card
+*/
+.profile-img-container {
+  /* border: 1px black solid; */
+  width: 100%;
+  height: 25%;
+  padding-bottom: 10%;
+  /* opacity: 0; */
+  
+}
+
+.social-media{
+    max-width: 75px;
+    max-height: 75px;
+}
+
+/*extra small devices: phones*/
+@media only screen and (max-width: 600px) {
+  .profile-image {
+    width: 15%;
+    height: 15%;
+    margin-left: -9%;
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .scroll {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  .profile-card {
+    padding-top: 65px;
+  }
+
+  .social-media{
+    max-width: 25px;
+}
+
+}
+
+/*Small devices: small tablets and large phones*/
+@media only screen and (min-width: 600px) {
+  .profile-image {
+    min-width: 150px;
+    min-height: 150px;
+    width: 20%;
+    height: 20%;
+    margin-left: -9%;
+    margin-right: 25%;
+  }
+
+  /*height of text box allowing for scroll*/
+  .scroll {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .profile-card {
+    padding-top: 100px;
+  }
+
+  .social-media{
+    max-width: 45px;
+
+}
+
+}
+
+/*Medium devices*/
+@media only screen and (min-width: 768px) {
+  .profile-image {
+    min-width: 175px;
+    min-height: 175px;
+    margin-left: -10%;
+    margin-right: 25%;
+    max-width: 25%;
+    max-height: 25%;
+  }
+
+  .scroll {
+    max-height: auto;
+    overflow-y: auto;
+  }
+
+  .profile-card {
+    padding-top: 100px;
+  }
+
+  .social-media{
+    max-width: 55px;
+}
+
+}
+
+/*Large devices*/
+@media only screen and (min-width: 992px) {
+  .profile-image {
+    min-width: 200px;
+    min-height: 200px;
+    margin-left: -10%;
+    margin-right: 25%;
+  }
+
+  .profile-card {
+    padding-top: 100px;
+  }
+}
+
+/*XLarge devices*/
+@media only screen and (min-width: 1200px) {
+  .profile-image {
+    min-width: 300px;
+    min-height: 300px;
+    margin-left: -12%;
+    margin-right: 25%;
+    position: absolute;
+  }
+  .scroll {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .profile-card {
+    padding-top: 175px;
+  }
+}

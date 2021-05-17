@@ -89,7 +89,8 @@ class Projects extends React.Component {
               target="_blank"
             >
               {" "}
-              <Button variant="primary">Visit YiYi Bakery</Button>
+              <Button variant="primary">Visit YiYi Bakery</Button><span>   </span> 
+              <Button variant="primary">View Github Repo</Button>
             </a>
           </Card.Body>
         </Card>
