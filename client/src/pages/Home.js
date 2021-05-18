@@ -8,7 +8,7 @@ import linkedin from '../images/linkedin.png';
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import google from '../images/google.png';
-import { Col, Container, Row, Image, Jumbotron, Card, ListGroup, ListGroupItem, Button } from 'react-bootstrap';
+import { Image, Card, ListGroup, ListGroupItem, Button } from 'react-bootstrap';
 import '../Home.css';
 
 
@@ -27,8 +27,6 @@ class Home extends React.Component {
           <Card className="Centered profile-card" >
           <Card.Title className="name">Mary Leong</Card.Title>
           <Card.Subtitle>Software Developer</Card.Subtitle>
-          {/* <h2>Mary Leong</h2>
-          <h4>Software Developer</h4> */}
           <Card.Body>
           <ListGroup className="list-group-flush">
           <ListGroupItem>
@@ -46,7 +44,7 @@ class Home extends React.Component {
 
           
           When I am not hunched over my computer programming, you can find me out in the park training for my next 5K run, trying out
-          new pastery recipes, or catching up with my family and peers.
+          new pastery recipes, or catching up with my family and peers.<br/>
 
           My career interests include:<br/> 
           <ul>

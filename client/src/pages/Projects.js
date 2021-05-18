@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Iframe from 'react-iframe';
 import "../App.css";
 import { Card, Button, Carousel, ListGroup } from "react-bootstrap";
 import cunyGallery from "../images/cunyGallery.png";
@@ -108,6 +109,13 @@ class Projects extends React.Component {
               Objects fall at a faster rate throughout the game<br/>
               Used Conditional Logic Functions in Processing.js allowing for <br/>
               allowing for user interation and response<br/> 
+              <Iframe url="https://openprocessing.org/sketch/848097/"
+        width="500px"
+        height="600px"
+        id="myId"
+        className="myClassname"
+        display="initial"
+        position="relative"/>
             </Card.Text>
             <a href="https://openprocessing.org/sketch/848097/" target="_blank">
               <Button variant="primary">Try Feeding Piggy</Button>
