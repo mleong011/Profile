@@ -7,6 +7,7 @@ import cunyGalleryB from "../images/cunyGalleryB.png";
 import yiyiBakery from "../images/yiyiBakery.png";
 import feedingPiggy from "../images/feedingPiggy.png";
 import feedingPiggyClip from "../images/feedingPiggyClip.gif";
+import netflixCloneA from "../images/netflixCloneA.png";
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -45,11 +46,19 @@ class Projects extends React.Component {
             </Carousel>
             {/*Project information */}
             <Card.Text>
-              Senior Project created in a group of 4, CUNY Gallery is a web
-              application that allows users to scan QR codes located on artwork{" "}
-              <br />
-              throughout the CUNY campuses and redirects them to more
-              information about the artist and artwork.
+            <ul> 
+              <li>Designed and Implemented a Progressive Web Application (PWA) in a team of 4/
+              </li>
+              <li>
+                Used Ionic React framework to create application UI components in Typescript.
+              </li>
+              <li>
+                  Users are redirected to our app after scanning a QR code located on artwork
+                  throughout cuny campuses for more information and ability to participate in a
+                  scavenger hunt.
+              </li>
+              
+              </ul>
             </Card.Text>
 
             {/*Technologies used */}
@@ -128,6 +137,52 @@ class Projects extends React.Component {
 
             </ListGroup>
 
+          </Card.Body>
+        </Card>
+
+        <br/>
+        <Card>
+          <Card.Header as="h5">Netflix Clone</Card.Header>
+          <Card.Body>
+            <Card.Title></Card.Title>
+            {/*images for application */}
+            <Carousel>
+              <Carousel.Item>
+                <img src={netflixCloneA} alt="netflix-clone-a" width="400" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={} alt="netflix-clone-b" width="400" />
+              </Carousel.Item>
+            </Carousel>
+            {/*Project information */}
+            <Card.Text>
+            <ul> 
+              <li>Created during the DataStax Netflix Clone Workshop
+              </li>
+              <li>
+               Creating a database on Astra DB and deploying a netflix clone application using react to Netlify
+              </li>
+              <li>
+                  Creating this app to learn about pagination with GraphQL to get data page by page enabling retrieval of fields without overhead.
+              </li>
+              
+              </ul>
+            </Card.Text>
+
+            {/*Technologies used */}
+            <Card.Title>Technoligies Used</Card.Title>
+            <ListGroup horizontal>
+              <ListGroup.Item>React JS</ListGroup.Item>
+              <ListGroup.Item>JavaScript</ListGroup.Item>
+              <ListGroup.Item>DataStax Astra DB</ListGroup.Item>
+              <ListGroup.Item>Netlify</ListGroup.Item>
+              <ListGroup.Item>Gitpod</ListGroup.Item>
+            </ListGroup>
+
+            {/*link to project */}
+            <a href="https://clone-of-netflix.netlify.app" target="_blank">
+              <Button variant="primary">Visit Netflix Clone</Button>
+            </a>
           </Card.Body>
         </Card>
       </div>
